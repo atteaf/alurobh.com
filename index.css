@@ -1,0 +1,559 @@
+/* الحاوية العلوية */
+.top-header {
+    padding: 10px 0;
+    background-color: #111;
+}
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.top-header .email i {
+    color: #fff;
+}
+
+.top-header .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.top-header .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.top-header .social-icons a:hover {
+    color: #ccc;
+}
+
+/* الخط الفاصل */
+.header-divider {
+    height:2px;
+    background-color: #eedede;
+}
+
+/* الحاوية السفلية */
+.bottom-header {
+    padding: 10px 0;
+    background-color: #000;
+}
+
+.bottom-header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.bottom-header .logo {
+    height: 50px;
+}
+
+.bottom-header .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bottom-header .menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif; /* نوع الخط */
+    font-size: 28px; /* حجم الخط */
+    font-weight: 700; /* سمك الخط */
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+    background: linear-gradient(to bottom, #CE1126, #FFFFFF, #000000); /* تدرج لوني عمودي: أحمر، أبيض، أسود */
+    -webkit-background-clip: text; /* لجعل التدرج يظهر داخل النص */
+    -webkit-text-fill-color: transparent; /* لجعل النص شفافًا */
+}
+
+
+/* تنسيق القائمة*/
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* المسافة بين عناصر القائمة */
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* حجم الخط */
+    font-weight: 600; /* سمك الخط */
+    transition: color 0.3s ease; /* تأثير تغيير اللون عند التمرير */
+}
+
+.menu ul li a:hover {
+    color: #ccc; /* لون النص عند التمرير */
+}
+
+
+.email a {
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة الخط التحتي */
+    font-size: 14px; /* حجم الخط */
+    transition: color 0.3s ease; /* تأثير تغيير اللون عند التمرير */
+}
+
+.email a:hover {
+    color: #ccc; /* لون النص عند التمرير */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-icon:hover {
+    color: #ccc;
+}
+
+.search-box {
+    display: none; /* إخفاء مربع البحث بشكل افتراضي */
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    width: 150px;
+}
+
+.search-input::placeholder {
+    color: #ccc;
+}
+
+/* القسم أدناه من الزفة الأولة اللي فوقه جاء بعده */
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* رأس الصفحة */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+}
+
+.header .logo {
+    height: 50px;
+}
+
+.header .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .menu ul li {
+    margin-left: 20px;
+}
+
+.header .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header .menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* شريحة الصور */
+.slider {
+    background-color: #222;
+    padding: 20px 0;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.slide-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.slide-text p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* أخبار رئيسية */
+.main-news {
+    padding: 20px 0;
+}
+
+.main-news h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* أخبار فرعية */
+.secondary-news {
+    padding: 20px 0;
+}
+
+.secondary-news h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+
+
+.thumbnail {
+    width: 300px; /*  بروفايل1 عرض الصورة */
+    height: 200px; /* ارتفاع الصورة */
+    object-fit: cover; /* لتغطية المساحة المحددة دون تشويه الصورة */
+    border-radius: 8px; /* زوايا مدورة */
+    margin-bottom: 10px; /* مسافة أسفل الصورة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    transition: transform 0.3s ease; /* تأثير تكبير عند التمرير */
+}
+
+
+
+.thumbnail:hover {
+    transform: scale(1.05); /* تكبير الصورة قليلاً عند التمرير */
+}
+
+
+body {
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+body {
+    direction: rtl; /* النص من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+.top-header .container, .bottom-header .container {
+    direction: ltr; /* إعادة تعيين اتجاه النص للعناصر المحددة */
+}
+
+
+
+
+
+
+.profile-item {
+    text-align: right; /* محاذاة محتوى البروفايل إلى اليمين */
+}
+
+.profile-item img {
+    float: right; /* محاذاة الصورة إلى اليمين */
+    margin-left: 15px; /* مسافة بين الصورة والنص */
+    margin-right: 0; /* إزالة المسافة اليمينية */
+}
+
+
+.profiles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* عرض كل عمود */
+    gap: 20px; /* المسافة بين البروفايلات */
+    padding: 20px;
+}
+
+.profile-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: right; /* محاذاة المحتوى إلى اليمين */
+}
+
+.profile-item img {
+    width: 100%; /* عرض الصورة بنسبة 100% من المساحة المتاحة */
+    height: 200px; /* ارتفاع الصورة */
+    object-fit: cover; /* لتغطية المساحة المحددة دون تشويه الصورة */
+    border-radius: 8px; /* زوايا مدورة */
+    margin-bottom: 10px; /* مسافة أسفل الصورة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    transition: transform 0.3s ease; /* تأثير تكبير عند التمرير */
+}
+
+.profile-item img:hover {
+    transform: scale(1.05); /* تكبير الصورة قليلاً عند التمرير */
+}
+
+.profile-title {
+    font-size: 24px;
+    color: #000; /* لون العنوان أسود */
+    text-decoration: none; /* إزالة الخط من تحت العنوان */
+    display: block; /* لجعل العنوان يأخذ مساحة كاملة */
+    margin: 10px 0;
+}
+
+.profile-title:hover {
+    color: #333; /* تغيير لون النص عند التمرير */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* تذييل الصفحة */
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+ 
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu ul li {
+    margin-left: 20px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+/*لاجل اظهار زر القائمة في الشاشات الصغيرة*/
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+/* إعادة تعيين التنسيقات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* الهيدر */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* إخفاء الزر بشكل افتراضي */
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* القائمة المنسدلة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    header .menu-icon {
+        display: block; /* إظهار الزر على الشاشات الصغيرة */
+    }
+
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    header .nav-links.active {
+        display: flex;
+    }
+
+    header .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* المحتوى الرئيسي */
+main {
+    padding: 20px 0;
+}
+
+/* الفوتر */
+footer {
+    background-color: #333;
+    width: 100%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
